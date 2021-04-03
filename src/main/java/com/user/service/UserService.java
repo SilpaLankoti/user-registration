@@ -48,7 +48,7 @@ public class UserService {
 
 	public void sendMail(UserDetails userDetails) throws MailException, UserNameAlreadyExistsException {
 			SimpleMailMessage mailMessage = new SimpleMailMessage();
-			mailMessage.setFrom("hr@investo-technologies.com");
+			mailMessage.setFrom("production_environment@investo-technologies.com");
 			mailMessage.setTo("lankoti.silpa@gmail.com");
 			mailMessage.setSubject("user registered succesfully");
 			mailMessage.setText("username:"+userDetails.getUserName() +" is registered!" );
